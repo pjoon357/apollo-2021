@@ -12,7 +12,8 @@ const GET_MOVIE = gql`
       medium_cover_image
       language
       rating
-      description_intro 
+      description_intro
+      isLiked @client
     }
     suggestions(id: $id) {
       id
